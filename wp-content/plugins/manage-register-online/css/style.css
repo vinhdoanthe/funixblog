@@ -1,0 +1,23 @@
+.wp-referrer-menu, .wp-referrer-content {
+    float: left;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.wp-referrer-menu input {
+    cursor: pointer;
+}
+
+.wp-referrer-content input[type="button"] {
+    cursor: pointer;
+}
+
+.clear{clear:both;}
+
+#header-left{
+	float:left;
+	width:300px;
+}
+#header-right{
+	width:
+}
