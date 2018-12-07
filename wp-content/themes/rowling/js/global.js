@@ -91,5 +91,7 @@ jQuery(document).ready(function($) {
 		resizeVideo(vidSelector);
 	});
 	
-
+	$('span.btn-explain-menu').on('click', function () {
+		$(this).closest('li.menu-item-has-children').find('ul.sub-menu').toggle();
+  })
 });

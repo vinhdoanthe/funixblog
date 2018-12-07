@@ -1088,7 +1088,7 @@ body a,
 
 .content,
 .sidebar {
-    padding-top: 50px;
+    padding-top: 75px;
     padding-bottom: 50px;
 }
 
@@ -1433,7 +1433,7 @@ body a,
 
 .header-wrapper {
     background: #33363B;
-    height: 90px ;
+    height: 50px ;
 }
 
 .header {
@@ -3758,8 +3758,9 @@ img#wpstats {
 
     /* Header --------------------------------------- */
     .header {
-        padding: 25px 0;
+        padding: 0;
         border-top: 8px solid #26272B;
+        height: 50px;
     }
 
     .blog-title,
@@ -3781,12 +3782,11 @@ img#wpstats {
         display: block;
         width: 40px;
         height: 40px;
-        background: #0093C2;
-        border-radius: 99px;
+        background: transparent;
         position: absolute;
         top: 50%;
-        margin-top: -20px;
-        right: 0;
+        margin-top: 5px;
+        left: -15px;
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
     }
 
@@ -3867,10 +3867,10 @@ img#wpstats {
         display: block;
         padding: 20px 6%;
         font-size: 0.8rem;
-        font-weight: 900;
+        font-weight: unset;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: #fff;
+        color: #1c2333;
         text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
     }
 
@@ -4551,10 +4551,64 @@ a.btn-dang-ky {
     .hidden-850 {
         display: none;
     }
+    .header {
+        border-top: 0;
+    }
+
+    .nav-toggle-title {
+        position: absolute;
+        display: inline-block;
+        font-size: 11px;
+        line-height: 50px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        left: 25px;
+        font-family: 'Whitney SSm A', 'Whitney SSm B', arial, sans-serif;
+    }
+
+    .nav-btn-register {
+        position: absolute;
+        background: #d5ce4a;
+        right: -21px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        width: 130px;
+        color: #1c2333;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Whitney SSm A', 'Whitney SSm B', arial, sans-serif;
+        background-image: url(https://funix.edu.vn/wp-content/themes/csug/imgs/mheader_arrow.png);
+        background-repeat: no-repeat;
+        background-position-x: 0;
+        background-position-y: center;
+    }
+
+    .header {
+        background: #1c2333;
+    }
+
+    .mobile-menu {
+        background: #e3ecfb;
+        margin-top: 50px;
+    }
+
+    span.btn-explain-menu {
+        float: right;
+        font-size: 1.5em;
+        line-height: 2em;
+        margin-right: 0.5em;
+    }
+
+    li.menu-item-has-children ul.sub-menu {
+        display: none;
+    }
 }
 
 .wrapper.section-inner {
-    padding-top: 90px;
+    padding-top: 50px;
 }
 
 .credits p {

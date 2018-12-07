@@ -96,10 +96,12 @@
 <div class="header-wrapper">
 
     <div class="header">
-        <div class="navigation">
+        <div class="navigation hidden-850">
             <div class="logo hidden-850">
                 <a href="/" class="custom-logo-link" rel="home" itemprop="url">
-                    <img width="177" height="108" src="<?php echo get_theme_file_uri('imgs/Webp.net-resizeimage.png')?>" class="custom-logo" alt="FUNiX Online University" itemprop="logo">
+                    <img width="177" height="108"
+                         src="<?php echo get_theme_file_uri('imgs/Webp.net-resizeimage.png') ?>" class="custom-logo"
+                         alt="FUNiX Online University" itemprop="logo">
                 </a>
             </div>
             <div class="section-inner" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
@@ -174,47 +176,15 @@
         </div><!-- .navigation -->
 
         <div class="section-inner">
-
-            <?php /*if (get_theme_mod('rowling_logo')) : */ ?><!--
-
-                <a class="blog-logo" href='<?php /*echo esc_url(home_url('/')); */ ?>'
-                   title='<?php /*echo esc_attr(get_bloginfo('title')); */ ?> &mdash; <?php /*echo esc_attr(get_bloginfo('description')); */ ?>'
-                   rel='home'>
-                    <img src='<?php /*echo esc_url(get_theme_mod('rowling_logo')); */ ?>'
-                         alt='<?php /*echo esc_attr(get_bloginfo('title')); */ ?>'>
-                </a>
-
-            <?php /*elseif (get_bloginfo('description') || get_bloginfo('title')) :
-
-                $title_type = is_singular() ? '1' : '2';
-                */ ?>
-
-                <h<?php /*echo $title_type */ ?> class="blog-title">
-                    <a href="<?php /*echo esc_url(home_url('/')); */ ?>"
-                       title="<?php /*echo esc_attr(get_bloginfo('title')); */ ?> &mdash; <?php /*echo esc_attr(get_bloginfo('description')); */ ?>"
-                       rel="home"><?php /*echo esc_attr(get_bloginfo('title')); */ ?></a>
-                </h<?php /*echo $title_type */ ?>>
-
-                <?php /*if (get_bloginfo('description')) : */ ?>
-
-                <h4 class="blog-description">
-                    <?php /*bloginfo('description'); */ ?>
-                </h4>
-
-            <?php /*endif; */ ?>
-
-            --><?php /*endif; */ ?>
-
             <div class="nav-toggle">
-
                 <div class="bars">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </div>
-
             </div><!-- .nav-toggle -->
-
+            <div class="nav-toggle-title">Đại học trực tuyến Funix</div>
+            <div class="nav-btn-register">Đăng ký</div>
         </div>
         <!-- .section-inner
         </div><!-- .header -->
@@ -224,6 +194,7 @@
 
             <?php
             if (has_nav_menu('primary')) {
+                $nav_args['walker'] = new Nghiennet89_Menu_Walker();
                 wp_nav_menu($nav_args);
             } else {
                 wp_list_pages($list_pages_args);
