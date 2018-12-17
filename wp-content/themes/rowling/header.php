@@ -184,7 +184,7 @@
                 </div>
             </div><!-- .nav-toggle -->
             <div class="nav-toggle-title">Đại học trực tuyến Funix</div>
-            <div class="nav-btn-register">Đăng ký</div>
+            <div class="nav-btn-register"><a href="https://funix.edu.vn/dang-ky/">Đăng ký</a></div>
         </div>
         <!-- .section-inner
         </div><!-- .header -->
