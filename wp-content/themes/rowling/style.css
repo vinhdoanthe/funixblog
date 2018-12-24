@@ -4698,3 +4698,44 @@ section#custom_html-5 {
 .block-call-me-later {
     z-index: 999;
 }
+
+.primary-menu > li.menu-item-has-children > a {
+ padding-right: 15px;
+}
+.primary-menu > li.menu-item-has-children:before, .primary-menu > li.menu-item-has-children:after
+{
+display: none;
+}
+.navigation .primary-menu > li:hover > ul {
+    opacity: 1 !important;
+    left: 0 !important;
+    margin-left: 0 !important;
+    top: 44px !important;
+    right: unset !important;
+}
+.primary-menu > li > ul:before {
+    display:none;
+}
+.primary-menu ul li {
+    width: 220px;
+    background: #232a39;
+    text-align: left;
+}
+.primary-menu ul a {
+    display: block;
+    padding: 10px 0 10px 15px;
+    line-height: 130%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+    color: #f37125;
+    font-weight: inherit;
+    text-transform: inherit;
+    letter-spacing: 1px;
+}
+
+.btn-footer-1 a {
+    text-decoration: none;
+    color: #666;
+}

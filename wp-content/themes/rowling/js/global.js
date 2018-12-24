@@ -93,5 +93,9 @@ jQuery(document).ready(function($) {
 	
 	$('span.btn-explain-menu').on('click', function () {
 		$(this).closest('li.menu-item-has-children').find('ul.sub-menu').toggle();
-  })
+	});
+	
+	$('.click-to-chat').on('click', () => {
+		Tawk_API.toggle();
+	});
 });
